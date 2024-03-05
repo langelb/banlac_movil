@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_0">#1E98AC</color>
+    <color name="primary_30">#47A9B9</color>
+    <color name="primary_60">#70BAC6</color>
+    <color name="primary_90">#9BD1D9</color>
+    <color name="primary_100">#FFFFFF</color>
+    <color name="secondary_0">#FFB8B1</color>
+    <color name="secondary_30">#FBC2BD</color>
+    <color name="secondary_60">#F7CCC9</color>
+    <color name="secondary_90">#F2D8D7</color>
+    <color name="secondary_100">#FFFFFF</color>
+    <color name="tertiary_0">#000029</color>
+    <color name="tertiary_30">#2F2F50</color>
+    <color name="tertiary_60">#5E5E77</color>
+    <color name="tertiary_90">#9696A5</color>
+    <color name="tertiary_100">#FFFFFF</color>
+</resources>

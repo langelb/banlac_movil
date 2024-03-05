@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_extraction"
+            android:icon="@drawable/ic_bottle_water"
+            android:title="@string/menu_extraction" />
+        <item
+            android:id="@+id/nav_breastfeeding"
+            android:icon="@drawable/ic_person_breastfeeding"
+            android:title="@string/menu_breastfeeding" />
+        <item
+            android:id="@+id/nav_alarm"
+            android:icon="@drawable/ic_clock"
+            android:title="@string/menu_alarm" />
+        <item
+            android:id="@+id/nav_statistical_information"
+            android:icon="@drawable/ic_chart_simple"
+            android:title="@string/menu_statistical_information" />
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_circle_xmark"
+            android:title="@string/menu_log_out" />
+    </group>
+</menu>
