@@ -1,21 +1,19 @@
-package com.example.banlac.ui.home
+package com.example.banlac.ui.login
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.banlac.MainActivity
+import androidx.navigation.fragment.findNavController
 import com.example.banlac.R
-import com.example.banlac.databinding.FragmentHomeBinding
-import com.google.android.material.navigation.NavigationView
+import com.example.banlac.databinding.FragmentLoginBinding
 
-class HomeFragment : Fragment() {
+class LoginFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentLoginBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -26,14 +24,14 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+        val loginViewModel =
+            ViewModelProvider(this).get(LoginViewModel::class.java)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentLoginBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textLogin
+        loginViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root
@@ -42,9 +40,11 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val mainActivity = activity as MainActivity
-        mainActivity.lockDrawer(false)
-        mainActivity.setFabVisibility(false)
+        // Configurar el listener del botón de login
+        binding.buttonLogin.setOnClickListener {
+            // Navegar al HomeFragment
+            findNavController().navigate(R.id.action_nav_login_to_nav_home)
+        }
     }
 
     override fun onDestroyView() {
