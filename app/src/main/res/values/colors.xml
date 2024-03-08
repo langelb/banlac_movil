@@ -15,4 +15,5 @@
     <color name="tertiary_60">#5E5E77</color>
     <color name="tertiary_90">#9696A5</color>
     <color name="tertiary_100">#FFFFFF</color>
+    <color name="transparent">@android:color/transparent</color>
 </resources>

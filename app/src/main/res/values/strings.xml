@@ -7,9 +7,12 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <string name="view_login">Login</string>
     <string name="menu_extraction">Extracción</string>
     <string name="menu_breastfeeding">Toma</string>
     <string name="menu_alarm">Alarma</string>
     <string name="menu_statistical_information">Información estadística</string>
     <string name="menu_log_out">Cerrar sesión</string>
+
+    <string name="icon_extraction">Acción</string>
 </resources>

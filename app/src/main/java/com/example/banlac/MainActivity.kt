@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
     // Método público para controlar la visibilidad del FAB
     fun setFabVisibility(isVisible: Boolean) {
-        binding.appBarMain.fab.visibility = if (isVisible) View.GONE else View.VISIBLE
+        binding.appBarMain.fab.visibility = if (isVisible) View.VISIBLE else View.GONE
     }
 
     fun lockDrawer(shouldLock: Boolean) {
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow
+                R.id.nav_extraction, R.id.nav_gallery, R.id.nav_slideshow
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

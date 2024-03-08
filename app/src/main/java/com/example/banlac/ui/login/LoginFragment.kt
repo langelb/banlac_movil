@@ -43,7 +43,7 @@ class LoginFragment : Fragment() {
         // Configurar el listener del botón de login
         binding.buttonLogin.setOnClickListener {
             // Navegar al HomeFragment
-            findNavController().navigate(R.id.action_nav_login_to_nav_home)
+            findNavController().navigate(R.id.action_nav_login_to_nav_extraction)
         }
     }
 
