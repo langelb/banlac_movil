@@ -9,10 +9,24 @@
 
     <string name="view_login">Login</string>
     <string name="menu_extraction">Extracción</string>
+    <string name="menu_extraction_registry">Registrar extracción</string>
+    <string name="menu_extraction_edit">Editar extracción</string>
     <string name="menu_breastfeeding">Toma</string>
     <string name="menu_alarm">Alarma</string>
     <string name="menu_statistical_information">Información estadística</string>
     <string name="menu_log_out">Cerrar sesión</string>
 
-    <string name="icon_extraction">Acción</string>
+    <string name="table_extraction_id">#</string>
+    <string name="table_extraction_date">Fecha</string>
+    <string name="table_extraction_amount">Cantidad (Oz)</string>
+    <string name="table_extraction_action">Acción</string>
+
+    <string name="create_extraction_hour">Hora</string>
+    <string name="create_extraction_left_breast">Seno izquierdo</string>
+    <string name="create_extraction_right_breast">Seno derecho</string>
+    <string name="create_extraction_chronometer">Cronómetro</string>
+    <string name="create_extraction_note">Nota</string>
+    <string name="create_extraction_textarea">Escriba aquí...</string>
+    <string name="create_extraction_save">Guardar</string>
+
 </resources>

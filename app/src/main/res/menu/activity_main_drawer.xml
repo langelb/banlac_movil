@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:showIn="navigation_view">
+
+    <group android:id="@+id/menu_header_group">
+        <item
+            android:id="@+id/menu_header"
+            android:title="Menú"
+            android:enabled="false" />
+    </group>
 
     <group android:checkableBehavior="single">
         <item
@@ -18,8 +26,7 @@
             android:title="@string/menu_alarm" />
         <item
             android:id="@+id/nav_statistical_information"
-            android:icon="@drawable/ic_chart_simple"
-            android:title="@string/menu_statistical_information" />
+            app:actionLayout="@layout/item_menu_doble"/>
         <item
             android:id="@+id/nav_log_out"
             android:icon="@drawable/ic_circle_xmark"

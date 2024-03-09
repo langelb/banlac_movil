@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="¿Desea eliminar este registro?"
+        android:text="¿Desea eliminar esta extracción?"
         android:textColor="@color/tertiary_30"
         android:layout_marginBottom="24dp"/>
 

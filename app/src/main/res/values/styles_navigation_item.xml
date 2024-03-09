@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Estilo personalizado para los ítems del menú del Navigation Drawer -->
-    <style name="NavigationViewItemTextStyle" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">14dp</item>
-    </style>
-</resources>

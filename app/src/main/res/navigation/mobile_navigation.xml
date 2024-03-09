@@ -19,13 +19,26 @@
         android:id="@+id/nav_extraction"
         android:name="com.example.banlac.ui.extraction.ExtractionFragment"
         android:label="@string/menu_extraction"
-        tools:layout="@layout/fragment_extraction" />
+        tools:layout="@layout/fragment_extraction">
+        <action
+            android:id="@+id/action_nav_extraction_to_nav_extraction_registry"
+            app:destination="@id/nav_extraction_registry" />
+        <action
+            android:id="@+id/action_nav_extraction_to_nav_extraction_edit"
+            app:destination="@id/nav_extraction_edit" />
+    </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.banlac.ui.gallery.GalleryFragment"
-        android:label="@string/menu_breastfeeding"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_extraction_registry"
+        android:name="com.example.banlac.ui.extraction_registry.ExtractionRegistryFragment"
+        android:label="@string/menu_extraction_registry"
+        tools:layout="@layout/fragment_extraction_registry" />
+
+    <fragment
+        android:id="@+id/nav_extraction_edit"
+        android:name="com.example.banlac.ui.extraction_edit.ExtractionEditFragment"
+        android:label="@string/menu_extraction_edit"
+        tools:layout="@layout/fragment_extraction_edit" />
 
     <fragment
         android:id="@+id/nav_slideshow"

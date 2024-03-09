@@ -28,7 +28,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="#"
+                android:text="@string/table_extraction_id"
                 android:textColor="@color/tertiary_30" />
 
             <!-- Celda 1.2 -->
@@ -38,7 +38,7 @@
                 android:layout_weight="2"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="Fecha"
+                android:text="@string/table_extraction_date"
                 android:textColor="@color/tertiary_30"/>
 
             <!-- Celda 1.3 -->
@@ -48,7 +48,7 @@
                 android:layout_weight="2"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="Cantidad (Oz)"
+                android:text="@string/table_extraction_amount"
                 android:textColor="@color/tertiary_30"/>
 
             <!-- Celda 1.4 -->
@@ -58,13 +58,14 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="Acción"
+                android:text="@string/table_extraction_action"
                 android:textColor="@color/tertiary_30"/>
         </TableRow>
 
     </TableLayout>
 
     <TableLayout
+        android:id="@+id/tableLayoutData"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
@@ -86,7 +87,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="1" />
+                android:text="1"
+                android:textColor="@color/tertiary_90"/>
 
             <View
                 android:layout_width="1dip"
@@ -100,7 +102,8 @@
                 android:layout_weight="2"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="2024-01-02" />
+                android:text="2024-01-02"
+                android:textColor="@color/tertiary_90"/>
 
             <View
                 android:layout_width="1dip"
@@ -114,7 +117,8 @@
                 android:layout_weight="2"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="1" />
+                android:text="1"
+                android:textColor="@color/tertiary_90"/>
 
             <View
                 android:layout_width="1dip"
@@ -128,7 +132,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@color/transparent"
-                android:contentDescription="@string/icon_extraction"
+                android:contentDescription="@string/table_extraction_action"
                 android:gravity="center"
                 android:padding="4dp"
                 android:src="@drawable/ic_ellipsis_vertical" />
@@ -150,7 +154,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="2" />
+                android:text="2"
+                android:textColor="@color/tertiary_90"/>
 
             <View
                 android:layout_width="1dip"
@@ -164,7 +169,8 @@
                 android:layout_weight="2"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="2024-01-02" />
+                android:text="2024-01-02"
+                android:textColor="@color/tertiary_90"/>
 
             <View
                 android:layout_width="1dip"
@@ -178,7 +184,8 @@
                 android:layout_weight="2"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="1.5" />
+                android:text="1.5"
+                android:textColor="@color/tertiary_90"/>
 
             <View
                 android:layout_width="1dip"
@@ -192,7 +199,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@color/transparent"
-                android:contentDescription="@string/icon_extraction"
+                android:contentDescription="@string/table_extraction_action"
                 android:gravity="center"
                 android:padding="4dp"
                 android:src="@drawable/ic_ellipsis_vertical" />
@@ -202,8 +209,9 @@
             android:layout_height="1dip"
             android:background="#000" />
 
-        <!-- Fila 2 -->
+        <!-- Fila 3 -->
         <TableRow
+            android:id="@+id/table_row_delete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -214,7 +222,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="3" />
+                android:text="3"
+                android:textColor="@color/tertiary_90"/>
 
             <View
                 android:layout_width="1dip"
@@ -228,7 +237,8 @@
                 android:layout_weight="2"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="2024-01-04" />
+                android:text="2024-01-04"
+                android:textColor="@color/tertiary_90"/>
 
             <View
                 android:layout_width="1dip"
@@ -242,7 +252,8 @@
                 android:layout_weight="2"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="1" />
+                android:text="1"
+                android:textColor="@color/tertiary_90"/>
 
             <View
                 android:layout_width="1dip"
@@ -256,12 +267,27 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@color/transparent"
-                android:contentDescription="@string/icon_extraction"
+                android:contentDescription="@string/table_extraction_action"
                 android:gravity="center"
                 android:padding="4dp"
                 android:src="@drawable/ic_ellipsis_vertical" />
         </TableRow>
 
     </TableLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:backgroundTint="@color/secondary_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:tint="@color/secondary_100" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

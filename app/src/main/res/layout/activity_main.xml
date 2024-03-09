@@ -22,7 +22,7 @@
         android:background="@color/tertiary_90"
         app:itemIconTint="@color/secondary_60"
         app:itemTextColor="@color/secondary_100"
-        app:itemTextAppearance="@style/NavigationViewItemTextStyle"
+        app:itemBackground="@drawable/nav_selector"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/activity_main_drawer" />

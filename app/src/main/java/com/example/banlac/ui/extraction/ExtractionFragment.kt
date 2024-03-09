@@ -5,12 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.view.ContextThemeWrapper
 import androidx.appcompat.widget.PopupMenu
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.example.banlac.MainActivity
 import com.example.banlac.R
 import com.example.banlac.databinding.FragmentExtractionBinding
@@ -46,10 +46,14 @@ class ExtractionFragment : Fragment() {
 
         val mainActivity = activity as MainActivity
         mainActivity.lockDrawer(true)
-        mainActivity.setFabVisibility(true)
+//        mainActivity.setFabVisibility(true)
 
         binding.iconoCelda14.setOnClickListener { buttonView ->
             showPopupMenu(buttonView)
+        }
+
+        binding.fab.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_extraction_to_nav_extraction_registry)
         }
     }
 
@@ -74,7 +78,7 @@ class ExtractionFragment : Fragment() {
         popupMenu.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.opcion_editar -> {
-                    // Tu código para la opción editar
+                    findNavController().navigate(R.id.action_nav_extraction_to_nav_extraction_edit)
                     true
                 }
                 R.id.opcion_eliminar -> {
@@ -103,6 +107,8 @@ class ExtractionFragment : Fragment() {
         }
         dialogView.findViewById<Button>(R.id.button_yes).setOnClickListener {
             // Manejar la acción de "Sí"
+            val rowToRemove = binding.tableRowDelete
+            binding.tableLayoutData.removeView(rowToRemove)
             dialog.dismiss()
         }
 

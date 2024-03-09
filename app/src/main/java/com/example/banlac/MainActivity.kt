@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.appBarMain.toolbar)
 
         binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
-        binding.appBarMain.fab.visibility = View.GONE
+//        binding.appBarMain.fab.visibility = View.GONE
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -37,17 +37,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     // Método público para controlar la visibilidad del FAB
-    fun setFabVisibility(isVisible: Boolean) {
-        binding.appBarMain.fab.visibility = if (isVisible) View.VISIBLE else View.GONE
-    }
+//    fun setFabVisibility(isVisible: Boolean) {
+//        binding.appBarMain.fab.visibility = if (isVisible) View.VISIBLE else View.GONE
+//    }
 
     fun lockDrawer(shouldLock: Boolean) {
 
-        binding.appBarMain.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null)
-                .setAnchorView(R.id.fab).show()
-        }
+//        binding.appBarMain.fab.setOnClickListener { view ->
+//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                .setAction("Action", null)
+//                .setAnchorView(R.id.fab).show()
+//        }
 
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_extraction, R.id.nav_gallery, R.id.nav_slideshow
+                R.id.nav_extraction, R.id.nav_slideshow
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
