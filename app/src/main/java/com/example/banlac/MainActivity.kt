@@ -13,6 +13,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.banlac.databinding.ActivityMainBinding
+import com.google.android.material.appbar.AppBarLayout
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,6 +29,8 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.appBarMain.toolbar)
 
         binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
+        val appBarLayout: AppBarLayout? = findViewById(R.id.appbar)
+        hideActionBar()
 //        binding.appBarMain.fab.visibility = View.GONE
     }
 
@@ -67,5 +70,15 @@ class MainActivity : AppCompatActivity() {
         } else {
             binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
         }
+    }
+
+    fun showActionBar() {
+        val appBarLayout: AppBarLayout? = findViewById(R.id.appbar)
+        appBarLayout?.visibility = View.VISIBLE
+    }
+
+    fun hideActionBar() {
+        val appBarLayout: AppBarLayout? = findViewById(R.id.appbar)
+        appBarLayout?.visibility = View.GONE
     }
 }

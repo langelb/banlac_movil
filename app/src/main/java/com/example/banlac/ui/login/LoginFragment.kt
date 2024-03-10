@@ -4,24 +4,23 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.example.banlac.MainActivity
 import com.example.banlac.R
 import com.example.banlac.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {
 
     private var _binding: FragmentLoginBinding? = null
-
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         val loginViewModel =
@@ -30,10 +29,8 @@ class LoginFragment : Fragment() {
         _binding = FragmentLoginBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textLogin
-        loginViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+        (activity as MainActivity?)?.hideActionBar()
+
         return root
     }
 
@@ -41,14 +38,15 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Configurar el listener del botón de login
-        binding.buttonLogin.setOnClickListener {
-            // Navegar al HomeFragment
+        binding.btnSignIn.setOnClickListener {
+            (activity as MainActivity?)?.showActionBar()
             findNavController().navigate(R.id.action_nav_login_to_nav_extraction)
         }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
+        (activity as MainActivity?)?.showActionBar()
         _binding = null
     }
 }

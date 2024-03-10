@@ -26,4 +26,25 @@
 
     <style name="Theme.Banlac.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
+    <style name="link_text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/primary_100</item>
+    </style>
+
+    <style name="login_main_text">
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/primary_100</item>
+    </style>
+
+    <style name="inputTextStyle" parent="Widget.Material3.TextInputLayout.FilledBox.Dense">
+        <item name="android:textColor">@color/tertiary_30</item>
+        <item name="boxBackgroundColor">@color/primary_100</item>
+        <item name="hintTextColor">@color/tertiary_30</item>
+        <item name="android:hint">@color/tertiary_30</item>
+    </style>
+
+
+
 </resources>

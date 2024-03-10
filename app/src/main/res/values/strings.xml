@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Banlac</string>
+    <string name="logo_description">Logo de banlac</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -8,6 +9,16 @@
     <string name="action_settings">Settings</string>
 
     <string name="view_login">Login</string>
+    <string name="hello">¡Hola!</string>
+    <string name="sign_in_prompt">Inicia sesión</string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="sign_in">Ingresar</string>
+    <string name="forgot_password"><u>Restablecer contraseña</u></string>
+    <string name="no_account_prompt">¿No tienes una cuenta?</string>
+    <string name="sign_up"><u>Regístrate</u></string>
+
+
     <string name="menu_extraction">Extracción</string>
     <string name="menu_extraction_registry">Registrar extracción</string>
     <string name="menu_extraction_edit">Editar extracción</string>
