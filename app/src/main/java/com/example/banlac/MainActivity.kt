@@ -1,5 +1,6 @@
 package com.example.banlac
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.View
@@ -31,6 +32,14 @@ class MainActivity : AppCompatActivity() {
         binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
         val appBarLayout: AppBarLayout? = findViewById(R.id.appbar)
         hideActionBar()
+
+        val navView: NavigationView = findViewById(R.id.nav_view)
+        navView.menu.findItem(R.id.nav_log_out).setOnMenuItemClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+            true
+        }
 //        binding.appBarMain.fab.visibility = View.GONE
     }
 

@@ -29,16 +29,40 @@
     </fragment>
 
     <fragment
+        android:id="@+id/nav_alarm"
+        android:name="com.example.banlac.ui.alarm.AlarmFragment"
+        android:label="@string/menu_alarm"
+        tools:layout="@layout/fragment_alarm">
+        <action
+            android:id="@+id/action_nav_alarm_to_nav_alarm_registry"
+            app:destination="@id/nav_alarm_registry" />
+        <action
+            android:id="@+id/action_nav_alarm_to_nav_alarm_edit"
+            app:destination="@id/nav_alarm_edit" />
+    </fragment>
+
+    <fragment
         android:id="@+id/nav_extraction_registry"
         android:name="com.example.banlac.ui.extraction_registry.ExtractionRegistryFragment"
         android:label="@string/menu_extraction_registry"
         tools:layout="@layout/fragment_extraction_registry" />
 
     <fragment
+        android:id="@+id/nav_alarm_registry"
+        android:name="com.example.banlac.ui.alarm_registry.AlarmRegistryFragment"
+        android:label="@string/menu_alarm_registry"
+        tools:layout="@layout/fragment_alarm_registry" />
+
+    <fragment
         android:id="@+id/nav_extraction_edit"
         android:name="com.example.banlac.ui.extraction_edit.ExtractionEditFragment"
         android:label="@string/menu_extraction_edit"
         tools:layout="@layout/fragment_extraction_edit" />
+    <fragment
+        android:id="@+id/nav_alarm_edit"
+        android:name="com.example.banlac.ui.alarm_edit.AlarmEditFragment"
+        android:label="@string/menu_alarm_edit"
+        tools:layout="@layout/fragment_alarm_edit" />
 
     <fragment
         android:id="@+id/nav_slideshow"

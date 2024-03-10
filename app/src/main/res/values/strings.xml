@@ -40,4 +40,17 @@
     <string name="create_extraction_textarea">Escriba aquí...</string>
     <string name="create_extraction_save">Guardar</string>
 
+    <string name="menu_alarm_registry">Registrar alarma</string>
+    <string name="menu_alarm_edit">Editar alarma</string>
+    <string name="table_alarm_id">#</string>
+    <string name="table_alarm_date">Fecha</string>
+    <string name="table_alarm_amount">Cantidad (Oz)</string>
+    <string name="table_alarm_action">Acción</string>
+
+    <string name="create_alarm_hour">Hora</string>
+    <string name="create_alarm_note">Nota</string>
+    <string name="create_alarm_textarea">Escriba aquí...</string>
+    <string name="create_alarm_save">Guardar</string>
+
+
 </resources>
