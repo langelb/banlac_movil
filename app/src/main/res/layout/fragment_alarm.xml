@@ -36,9 +36,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:gravity="center"
+                android:gravity="left"
                 android:padding="4dp"
-                android:text="@string/table_alarm_date"
+                android:text="@string/table_alarm_event"
                 android:textColor="@color/tertiary_30"/>
 
             <!-- Celda 1.3 -->
@@ -46,9 +46,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:gravity="center"
+                android:gravity="left"
                 android:padding="4dp"
-                android:text="@string/table_alarm_amount"
+                android:text="@string/table_alarm_config"
                 android:textColor="@color/tertiary_30"/>
 
             <!-- Celda 1.4 -->
@@ -95,14 +95,14 @@
                 android:layout_height="match_parent"
                 android:background="#000" />
 
-            <!-- Celda 1.2 -->
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:gravity="center"
+                android:gravity="left"
                 android:padding="4dp"
-                android:text="2024-01-02"
+                android:textSize="14dp"
+                android:text="Toma"
                 android:textColor="@color/tertiary_90"/>
 
             <View
@@ -115,9 +115,10 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="1"
+                android:gravity="left"
+                android:padding="1dp"
+                android:textSize="10dp"
+                android:text="Repetir después de 3h\nVibrar"
                 android:textColor="@color/tertiary_90"/>
 
             <View
@@ -144,13 +145,13 @@
 
         <!-- Fila 2 -->
         <TableRow
+            android:id="@+id/table_row_delete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <!-- Celda 2.1 -->
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="4dp"
@@ -167,9 +168,10 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:gravity="center"
+                android:gravity="left"
                 android:padding="4dp"
-                android:text="2024-01-02"
+                android:textSize="14dp"
+                android:text="Extracción"
                 android:textColor="@color/tertiary_90"/>
 
             <View
@@ -180,11 +182,12 @@
             <!-- Celda 2.3 -->
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="1.5"
+                android:gravity="left"
+                android:padding="1dp"
+                android:textSize="10dp"
+                android:text="Repetir después de 1h\nMúsica"
                 android:textColor="@color/tertiary_90"/>
 
             <View
@@ -208,71 +211,6 @@
         <View
             android:layout_height="1dip"
             android:background="#000" />
-
-        <!-- Fila 3 -->
-        <TableRow
-            android:id="@+id/table_row_delete"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <!-- Celda 3.1 -->
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="3"
-                android:textColor="@color/tertiary_90"/>
-
-            <View
-                android:layout_width="1dip"
-                android:layout_height="match_parent"
-                android:background="#000" />
-
-            <!-- Celda 3.2 -->
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="2024-01-04"
-                android:textColor="@color/tertiary_90"/>
-
-            <View
-                android:layout_width="1dip"
-                android:layout_height="match_parent"
-                android:background="#000" />
-
-            <!-- Celda 3.3 -->
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="1"
-                android:textColor="@color/tertiary_90"/>
-
-            <View
-                android:layout_width="1dip"
-                android:layout_height="match_parent"
-                android:background="#000" />
-
-            <!-- Celda 3.4 -->
-            <ImageButton
-                android:id="@+id/icono_celda_3_4"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/transparent"
-                android:contentDescription="@string/table_alarm_action"
-                android:gravity="center"
-                android:padding="4dp"
-                android:src="@drawable/ic_ellipsis_vertical" />
-        </TableRow>
-
     </TableLayout>
 
 

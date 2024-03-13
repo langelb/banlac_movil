@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/opcion_extract"
+        android:title="@string/menu_extraction"
+        android:icon="@drawable/ic_bottle_water" />
+
+    <item
+        android:id="@+id/opcion_breastfeeding"
+        android:title="@string/menu_breastfeeding"
+        android:icon="@drawable/ic_person_breastfeeding" />
+</menu>

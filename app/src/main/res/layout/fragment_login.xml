@@ -64,7 +64,10 @@
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:inputType="textEmailAddress"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:textColor="@color/input_hint"
+            android:textSize="16sp"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -85,7 +88,10 @@
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:inputType="textEmailAddress"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:textColor="@color/input_hint"
+            android:textSize="16sp"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 

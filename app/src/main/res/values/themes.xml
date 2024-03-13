@@ -39,10 +39,18 @@
     </style>
 
     <style name="inputTextStyle" parent="Widget.Material3.TextInputLayout.FilledBox.Dense">
-        <item name="android:textColor">@color/tertiary_30</item>
         <item name="boxBackgroundColor">@color/primary_100</item>
         <item name="hintTextColor">@color/tertiary_30</item>
         <item name="android:hint">@color/tertiary_30</item>
+        <item name="hintTextAppearance">@style/hintTextAppearance</item>
+    </style>
+
+    <style name="hintTextAppearance" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="hintTextAppearanceMin" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">10sp</item>
     </style>
 
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/opcion_alarm"
+        android:title="Alarma"
+        android:icon="@drawable/ic_alarm" />
+
+    <item
+        android:id="@+id/opcion_vibrate"
+        android:title="Vibrar"
+        android:icon="@drawable/ic_vibrate" />
+    <item
+        android:id="@+id/opcion_music"
+        android:title="Música"
+        android:icon="@drawable/ic_music" />
+</menu>
