@@ -34,10 +34,6 @@ class ExtractionFragment : Fragment() {
         _binding = FragmentExtractionBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-//        val textView: TextView = binding.textHome
-//        extractionViewModel.text.observe(viewLifecycleOwner) {
-//            textView.text = it
-//        }
         return root
     }
 
@@ -46,9 +42,16 @@ class ExtractionFragment : Fragment() {
 
         val mainActivity = activity as MainActivity
         mainActivity.lockDrawer(true)
-//        mainActivity.setFabVisibility(true)
 
         binding.iconoCelda14.setOnClickListener { buttonView ->
+            showPopupMenu(buttonView)
+        }
+
+        binding.iconoCelda24.setOnClickListener { buttonView ->
+            showPopupMenu(buttonView)
+        }
+
+        binding.iconoCelda34.setOnClickListener { buttonView ->
             showPopupMenu(buttonView)
         }
 
