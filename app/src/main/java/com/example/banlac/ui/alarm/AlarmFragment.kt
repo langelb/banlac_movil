@@ -38,6 +38,10 @@ class AlarmFragment : Fragment() {
         val mainActivity = activity as MainActivity
         mainActivity.lockDrawer(true)
 
+        binding.iconoCelda14.setOnClickListener { buttonView ->
+            showPopupMenu(buttonView)
+        }
+
         binding.iconoCelda24.setOnClickListener { buttonView ->
             showPopupMenu(buttonView)
         }

@@ -4,10 +4,10 @@
     <item
         android:id="@+id/opcion_extract"
         android:title="@string/menu_extraction"
-        android:icon="@drawable/ic_bottle_water" />
+        android:icon="@drawable/ic_bottle_water_menu" />
 
     <item
         android:id="@+id/opcion_breastfeeding"
         android:title="@string/menu_breastfeeding"
-        android:icon="@drawable/ic_person_breastfeeding" />
+        android:icon="@drawable/ic_person_breastfeeding_menu" />
 </menu>
