@@ -1,136 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.extraction_edit.ExtractionEditFragment">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        style="@style/Widget.Material3.TextInputLayout.FilledBox"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:hint="@string/table_extraction_date"
-        app:boxBackgroundColor="@color/primary_100"
-        app:boxStrokeColor="@color/primary_30"
-        app:boxStrokeWidth="1dp"
-        app:boxStrokeWidthFocused="2dp"
-        app:helperTextTextColor="?attr/colorOnSurfaceVariant"
-        app:hintTextColor="@color/tertiary_30"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/transparent"
-            android:text="2024/01/02"
-            android:textColor="@color/input_hint" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
-        style="@style/Widget.Material3.TextInputLayout.FilledBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:hint="@string/create_extraction_hour"
-        app:boxBackgroundColor="@color/primary_100"
-        app:boxStrokeColor="@color/primary_30"
-        app:boxStrokeWidth="1dp"
-        app:boxStrokeWidthFocused="2dp"
-        app:helperTextTextColor="?attr/colorOnSurfaceVariant"
-        app:hintTextColor="@color/tertiary_30"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/transparent"
-            android:text="09:03"
-            android:textColor="@color/input_hint" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <View
-        android:id="@+id/divider"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:background="@color/secondary_0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/create_extraction_left_breast"
-        android:textColor="@color/tertiary_30"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/divider" />
-
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:background="@color/secondary_0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider2">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/create_extraction_chronometer"
-            android:textColor="@color/tertiary_30"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/divider" />
-
-        <ImageButton
-            android:id="@+id/icono_chronometer1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:background="@color/transparent"
-            android:src="@drawable/ic_play" />
+        android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout3"
+            android:id="@+id/textInputLayout"
             style="@style/Widget.Material3.TextInputLayout.FilledBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/table_extraction_date"
+            app:boxBackgroundColor="@color/primary_100"
+            app:boxStrokeColor="@color/primary_30"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:helperTextTextColor="?attr/colorOnSurfaceVariant"
+            app:hintTextColor="@color/tertiary_30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/transparent"
+                android:text="2024/01/02"
+                android:textColor="@color/input_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/create_extraction_hour"
             app:boxBackgroundColor="@color/primary_100"
             app:boxStrokeColor="@color/primary_30"
             app:boxStrokeWidth="1dp"
@@ -144,297 +59,387 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="01:00"
                 android:backgroundTint="@color/transparent"
+                android:text="09:03"
                 android:textColor="@color/input_hint" />
         </com.google.android.material.textfield.TextInputLayout>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/secondary_0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/table_extraction_amount"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/create_extraction_left_breast"
             android:textColor="@color/tertiary_30"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/divider" />
 
-        <ImageButton
-            android:id="@+id/icono_chronometer2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="22dp"
-            android:background="@color/transparent"
-            android:src="@drawable/ic_play" />
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/secondary_0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout4"
-            style="@style/Widget.Material3.TextInputLayout.FilledBox"
+        <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            app:boxBackgroundColor="@color/primary_100"
-            app:boxStrokeColor="@color/primary_30"
-            app:boxStrokeWidth="1dp"
-            app:boxStrokeWidthFocused="2dp"
-            app:helperTextTextColor="?attr/colorOnSurfaceVariant"
-            app:hintTextColor="@color/tertiary_30"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+            app:layout_constraintTop_toBottomOf="@+id/divider2">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_extraction_chronometer"
+                android:textColor="@color/tertiary_30"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/divider" />
+
+            <ImageButton
+                android:id="@+id/icono_chronometer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_play" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout3"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1"
-                android:backgroundTint="@color/transparent"
-                android:textColor="@color/input_hint" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginStart="32dp"
+                app:boxBackgroundColor="@color/primary_100"
+                app:boxStrokeColor="@color/primary_30"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="2dp"
+                app:helperTextTextColor="?attr/colorOnSurfaceVariant"
+                app:hintTextColor="@color/tertiary_30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
-    </LinearLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="01:00"
+                    android:backgroundTint="@color/transparent"
+                    android:textColor="@color/input_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <View
-        android:id="@+id/divider3"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:background="@color/secondary_0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/create_extraction_right_breast"
-        android:textColor="@color/tertiary_30"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-    <View
-        android:id="@+id/divider4"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:background="@color/secondary_0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/table_extraction_amount"
+                android:textColor="@color/tertiary_30"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/divider" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider4">
+            <ImageButton
+                android:id="@+id/icono_chronometer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_play" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout4"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                app:boxBackgroundColor="@color/primary_100"
+                app:boxStrokeColor="@color/primary_30"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="2dp"
+                app:helperTextTextColor="?attr/colorOnSurfaceVariant"
+                app:hintTextColor="@color/tertiary_30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:backgroundTint="@color/transparent"
+                    android:textColor="@color/input_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/secondary_0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
         <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/create_extraction_chronometer"
-            android:textColor="@color/tertiary_30"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/divider" />
-
-        <ImageButton
-            android:id="@+id/icono_chronometer3"
+            android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:background="@color/transparent"
-            android:src="@drawable/ic_play" />
+            android:layout_marginTop="8dp"
+            android:text="@string/create_extraction_right_breast"
+            android:textColor="@color/tertiary_30"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout5"
-            style="@style/Widget.Material3.TextInputLayout.FilledBox"
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/secondary_0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            app:boxBackgroundColor="@color/primary_100"
-            app:boxStrokeColor="@color/primary_30"
-            app:boxStrokeWidth="1dp"
-            app:boxStrokeWidthFocused="2dp"
-            app:helperTextTextColor="?attr/colorOnSurfaceVariant"
-            app:hintTextColor="@color/tertiary_30"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+            app:layout_constraintTop_toBottomOf="@+id/divider4">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_extraction_chronometer"
+                android:textColor="@color/tertiary_30"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/divider" />
+
+            <ImageButton
+                android:id="@+id/icono_chronometer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_play" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout5"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="01:05"
-                android:backgroundTint="@color/transparent"
-                android:textColor="@color/input_hint" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginStart="32dp"
+                app:boxBackgroundColor="@color/primary_100"
+                app:boxStrokeColor="@color/primary_30"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="2dp"
+                app:helperTextTextColor="?attr/colorOnSurfaceVariant"
+                app:hintTextColor="@color/tertiary_30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
-    </LinearLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="01:05"
+                    android:backgroundTint="@color/transparent"
+                    android:textColor="@color/input_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/table_extraction_amount"
+                android:textColor="@color/tertiary_30"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/divider" />
+
+            <ImageButton
+                android:id="@+id/icono_chronometer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_play" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout6"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                app:boxBackgroundColor="@color/primary_100"
+                app:boxStrokeColor="@color/primary_30"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="2dp"
+                app:helperTextTextColor="?attr/colorOnSurfaceVariant"
+                app:hintTextColor="@color/tertiary_30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:backgroundTint="@color/transparent"
+                    android:textColor="@color/input_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/secondary_0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/table_extraction_amount"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/create_extraction_note"
             android:textColor="@color/tertiary_30"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/divider" />
+            app:layout_constraintTop_toBottomOf="@+id/divider5" />
 
-        <ImageButton
-            android:id="@+id/icono_chronometer4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="22dp"
-            android:background="@color/transparent"
-            android:src="@drawable/ic_play" />
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/secondary_0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout6"
-            style="@style/Widget.Material3.TextInputLayout.FilledBox"
+            android:id="@+id/textInputLayout7"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/create_extraction_textarea"
+            android:padding="8dp"
             app:boxBackgroundColor="@color/primary_100"
-            app:boxStrokeColor="@color/primary_30"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
             app:boxStrokeWidth="1dp"
-            app:boxStrokeWidthFocused="2dp"
-            app:helperTextTextColor="?attr/colorOnSurfaceVariant"
-            app:hintTextColor="@color/tertiary_30"
+            app:boxStrokeWidthFocused="1dp"
+            app:hintTextColor="@color/primary_30"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+            app:layout_constraintTop_toBottomOf="@+id/divider6">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1"
-                android:backgroundTint="@color/transparent"
-                android:textColor="@color/input_hint" />
+                android:text="Extracción realizada con éxito"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-    </LinearLayout>
-
-    <View
-        android:id="@+id/divider5"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:background="@color/secondary_0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/create_extraction_note"
-        android:textColor="@color/tertiary_30"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider5" />
-
-    <View
-        android:id="@+id/divider6"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:background="@color/secondary_0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout7"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:hint="@string/create_extraction_textarea"
-        android:padding="8dp"
-        app:boxBackgroundColor="@color/primary_100"
-        app:boxCornerRadiusBottomEnd="8dp"
-        app:boxCornerRadiusBottomStart="8dp"
-        app:boxCornerRadiusTopEnd="8dp"
-        app:boxCornerRadiusTopStart="8dp"
-        app:boxStrokeWidth="1dp"
-        app:boxStrokeWidthFocused="1dp"
-        app:hintTextColor="@color/primary_30"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider6">
-
-        <com.google.android.material.textfield.TextInputEditText
+        <Button
+            android:id="@+id/button_save"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Extracción realizada con éxito"/>
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@color/tertiary_30"
+            android:text="@string/create_extraction_save"
+            android:textColor="@color/primary_100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout7" />
 
-    <Button
-        android:id="@+id/button_save"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="@color/tertiary_30"
-        android:text="@string/create_extraction_save"
-        android:textColor="@color/primary_100"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
