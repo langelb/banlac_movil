@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Banlac" parent="Theme.Material3.DayNight">
+    <style name="Theme.Banlac" parent="Theme.Material3.Light">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/primary_0</item>
         <item name="colorPrimaryVariant">@color/primary_30</item>
@@ -19,9 +19,24 @@
         <item name="colorOutline">@color/secondary_30</item>
     </style>
 
-    <style name="Theme.Banlac.NoActionBar">
+    <style name="Theme.Banlac.NoActionBar"  parent="Theme.Material3.Light.NoActionBar" >
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/primary_0</item>
+        <item name="colorPrimaryVariant">@color/primary_30</item>
+        <item name="colorOnPrimary">@color/primary_0</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/primary_60</item>
+        <item name="colorSecondaryVariant">@color/primary_90</item>
+        <item name="colorOnSecondary">@color/secondary_0</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/primary_100</item>
+        <item name="android:windowLightStatusBar">@color/tertiary_0</item>
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/roboto_regular</item>
+
+        <item name="popupMenuStyle">@style/CustomPopupMenu</item>
+        <item name="colorOutline">@color/secondary_30</item>
     </style>
 
     <style name="Theme.Banlac.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
